@@ -525,7 +525,7 @@
                                                 <td>schmidt-123</td>
                                                 <td><span class="label label-success">Supporter</span> </td>
                                                 <td>schmidt-483@gmail.com</td>
-											</tr>
+																						</tr>
                                         </tbody>									
                                     </table> 
 									<button class="btn change2" onclick="popUpTeilnehmer()">Teilnehmerliste bearbeiten</button>                    
@@ -623,7 +623,7 @@
 			// Draw the chart and set the chart values
 			function drawChart() {
 			  var data = google.visualization.arrayToDataTable([
-			  ['Task', '126',],
+			  ['Task', '4',],
 			  ['Offen', 3],
 			  ['Abgeschlossen', 1],
 			  ['Überfällig', 1],
@@ -658,7 +658,7 @@
             var data = ev.dataTransfer.getData("text");
             ev.currentTarget.appendChild(document.getElementById(data));
         }
-
+				
         function createTask(){
             var x = document.getElementById("inprogress");
             var y = document.getElementById("done");
@@ -675,16 +675,6 @@
         }
 
         function saveTask(){
-            // var saveButton = document.getElementById("save-button");
-            // var editButton = document.getElementById("edit-button");
-            // if (saveButton.style.display === "none") {
-            //     saveButton.style.display = "block";
-            //     editButton.style.display = "none";
-            // } else{
-            //     saveButton.style.display = "none";
-            //     editButton.style.display = "block";
-            // }
-
             var todo = document.getElementById("todo");
             var taskName = document.getElementById("task-name").value;
             todo.innerHTML += `
@@ -694,17 +684,7 @@
             `
         }
 
-        function editTask(){
-            var saveButton = document.getElementById("save-button");
-            var editButton = document.getElementById("edit-button");
-            if (saveButton.style.display === "none") {
-                saveButton.style.display = "block";
-                editButton.style.display = "none";
-            } else{
-                saveButton.style.display = "none";
-                editButton.style.display = "block";
-            }
-        }
+      
 		</script>
 		<!--Kanban-board-->
 	</body>
