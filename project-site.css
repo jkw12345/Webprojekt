@@ -104,9 +104,6 @@
 
 
 /*kanban-board*/
-
-
-
 .container {
   width: 100%;
   min-width: 50%;
@@ -123,7 +120,6 @@
   font-family: sans-serif;
   
 }
-
 
 .kanban-block,
 .create-new-task-block {
@@ -227,7 +223,7 @@ textarea {
   display: none;
 }
 
-
+/*anderes Css*/
 
 #button-addon1 {
   color: #ffc371;
